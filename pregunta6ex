@@ -1,0 +1,25 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+class lectura extends CI_Controller {
+
+
+	public function index()
+	{
+        $datos['ci']="765433";
+        $datos['nombre']="mmoscori1";
+        $this->load->model("Persona_model");
+        $filas = $this->Persona_model->personas();
+        $datos["filas"]=$filas;
+		$this->load->view('lectura_view',$datos);
+	}
+    public function index2(){
+        //$datos['ci']="765433";
+        //$datos['nombre']="mmoscori1";
+        $this->load->model("Persona_model");
+        $filas = $this->Persona_model->persona('765467');
+        $datos["filas"]=$filas;
+		$this->load->view('lectura_view',$datos);
+    }
+    
+    
+}
