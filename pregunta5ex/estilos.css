@@ -1,0 +1,51 @@
+/* Resetear estilos del formulario */
+form {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos del contenedor */
+  .contenedor {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+  }
+  
+  /* Estilos del título */
+  h1 {
+    font-size: 24px;
+  }
+  
+  /* Estilos de los campos de entrada y el botón */
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Estilos del botón */
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Estilos del botón al pasar el mouse por encima */
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  .cerrarsesion{
+    padding:10px 20px;
+    background-color: ff0000;
+    color:#fff;
+    font-size: 16px;
+    border:none;
+    cursor:pointer;
+  }
+  
