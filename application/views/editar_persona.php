@@ -1,0 +1,56 @@
+
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edición de Persona</title>
+</head>
+<body>
+    <h1>Edición de Persona</h1>
+    <div class="col-lg-5">
+	<form method="POST" action="<?php echo base_url();?>persona/actualizarpersona">
+			<div class="form-group col-lg-5">
+            <label for="">ID</label>
+			<input type="text" readonly="true"
+				class="form-control" name="id" value="<?php echo $persona->id;?>"class="form-control" required="true">
+			</div>
+			<label for="">CI</label>
+			<input type="text"
+				class="form-control" name="ci" class="form-control" required="true" value="<?php echo $persona->ci;?>"class="form-control">
+			</div>
+			<div class="form-group col-lg-5">
+			<label for="">Nombre</label>
+			<input type="text"
+				class="form-control" name="nombre" class="form-control" required="true" value="<?php echo $persona->nombre;?>"class="form-control">
+			</div>
+			<div class="form-group col-lg-5">
+			<label for="">Fecha Nacimiento</label>
+			<input type="text"
+				class="form-control" name="fechanac" class="form-control" required="true" value="<?php echo $persona->fechanac;?>"class="form-control">
+			</div>
+			<div class="form-group col-lg-5">
+			<label for="">telefono</label>
+			<input type="text"
+				class="form-control" name="telefono" class="form-control" required="true" value="<?php echo $persona->telefono;?>"class="form-control">
+			</div>
+			<div class="form-group col-lg-5">
+			<label for="">Departamento</label>
+			<input type="text"
+				class="form-control" name="departamento" class="form-control" required="true" value="<?php echo $persona->departamento;?>"class="form-control">
+			</div>
+			<div class="clearfix"></div> 
+			<input type="submit" class="btn btn-primary" name="" value="Guardar">
+			<input type="reset" class="btn btn-danger"  value="Limpiar">
+</form>
+
+</div>
+
+
+    <!--<form action="<?php echo site_url('persona/actualizar_persona/' . $persona->id); ?>" method="post">
+         Campos del formulario de edición de persona con los valores actuales 
+        <input type="submit" value="Actualizar">
+    </form>
+    <a href="<?php echo site_url('persona/index'); ?>">Volver</a>-->
+</body>
+</html>
