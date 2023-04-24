@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterM.Master" AutoEventWireup="true" CodeBehind="MasterInf.master.cs" Inherits="Maquetacion.informatica.MasterInf" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="contenidomenu" runat="server">
+ <ul id="contenidomenu">
+     <li>
+         <a href="adminf.aspx">ADMINISTRACION</a></li>
+         <li><a href="InsInformatica.aspx">INSCRIPCIONES</a></li>
+         <li><a href="datosestudiantes.aspx">ESTUDIANTES</a>
+
+
+     </li>
+ </ul>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="contenidoprincipal" runat="server">
+     <asp:ContentPlaceHolder ID="contenidoprincipal" runat="server">
+        
+             </asp:ContentPlaceHolder>
+</asp:Content>
