@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterM.master.cs" Inherits="Maquetacion.MasterM" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="cabecera">
+            <div id="contenidocabecera">
+                <div id="barrahorizontal">
+                <ul>
+                    <li>
+                        <a href="/Default.aspx">INICIO</a> </li>
+                      <li>  <a href="/informatica/adminf.aspx">INFORMATICA</a>
+                    </li>
+                     <li>  <a href="/matematica/admiMat.aspx">MATEMATICA</a>
+                    </li>
+                    <li>  <a href="/fisica/adminFisaspx.aspx">FISICA</a>
+                    </li>
+                </ul>
+                </div>
+                <div id="logotipo">
+                <img src="images/logo.png" alt="logo MTW" />
+                </div>
+                <div id="titulo">
+                    <h1>Facultad de Ciencias Puras y Naturales</h1>
+                    <h2>Carreras de Facultad</h2>
+                </div>
+            </div>
+       </div>
+
+        <div id="bajo">
+            <div id="columnIz">
+            <asp:ContentPlaceHolder ID="contenidomenu" runat="server">
+        
+             </asp:ContentPlaceHolder>
+            </div>
+            <div id="columnCentro">
+             <asp:ContentPlaceHolder ID="contenidoprincipal" runat="server">
+        
+             </asp:ContentPlaceHolder>
+            </div>
+            <div id="columnDer">
+
+            </div>
+            <div id="pie">
+            <span>Pagina FCPN</span>
+            </div>
+        </div>
+            
+     </div>
+    </form>
+</body>
+</html>
